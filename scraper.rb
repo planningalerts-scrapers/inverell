@@ -15,9 +15,10 @@ error = 0
 cont = true
 while cont do
   form = page.form
-  form['ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox'] = 'DA-' + i.to_s + '/' + ENV['MORPH_PERIOD']
-  form['ctl00$MainBodyContent$mGeneralEnquirySearchControl$mSearchButton'] ='Search'
-  list = form.submit
+  field = form.field_with(name: "ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox")
+  field.value = 'DA-' + i.to_s + '/' + ENV['MORPH_PERIOD']
+  button = form.button_with(value: "Search")
+  list = form.submit(button)
 
   table = list.search("table.ContentPanel")
 
