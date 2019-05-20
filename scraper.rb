@@ -17,15 +17,11 @@ puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MOR
 url         = 'http://203.49.140.77/ePathway/Production/Web'
 comment_url = 'mailto:council@inverell.nsw.gov.au'
 
-agent = Mechanize.new
-agent.user_agent_alias = 'Mac Safari'
-page = agent.get(url + "/Default.aspx")                         # populate cookies
+scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
 
-page = agent.get(url + "/generalenquiry/enquirylists.aspx");    # click 'Next'
-form = page.form
-form['mDataGrid:Column0:Property'] = 'ctl00$MainBodyContent$mDataList$ctl00$mDataGrid$ctl02$ctl00'
-form['ctl00$MainBodyContent$mContinueButton'] = 'Next'
-page = form.submit
+agent = Mechanize.new
+
+page = scraper.pick_type_of_search(:all)
 
 # a very bad and hackie way to collect DAs
 # basically scan from DA 1 to whatever.... until 10 tries and assume it is 'The End'
