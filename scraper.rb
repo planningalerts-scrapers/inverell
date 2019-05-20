@@ -1,17 +1,7 @@
 require "epathway_scraper"
 
-def is_valid_year(date_str, min=2000, max=DateTime.now.year)
-  if ( date_str.scan(/^(\d)+$/) )
-    if ( (min..max).include?(date_str.to_i) )
-      return true
-    end
-  end
-  return false
-end
-
-unless ( is_valid_year(ENV['MORPH_PERIOD'].to_s) )
-  ENV['MORPH_PERIOD'] = DateTime.now.year.to_s
-end
+# Use current year if environment variable isn't set
+ENV['MORPH_PERIOD'] ||= DateTime.now.year.to_s
 puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
 
 scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
