@@ -2,7 +2,7 @@ require "epathway_scraper"
 
 # Use current year if environment variable isn't set
 ENV['MORPH_PERIOD'] ||= DateTime.now.year.to_s
-puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
+puts "Getting data in year `" + ENV['MORPH_PERIOD'] + "`, changable via MORPH_PERIOD environment"
 
 scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
 
@@ -15,7 +15,7 @@ error = 0
 cont = true
 while cont do
   form = page.form
-  form['ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox'] = 'DA-' + i.to_s + '/' + ENV['MORPH_PERIOD'].to_s
+  form['ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox'] = 'DA-' + i.to_s + '/' + ENV['MORPH_PERIOD']
   form['ctl00$MainBodyContent$mGeneralEnquirySearchControl$mSearchButton'] ='Search'
   list = form.submit
 
