@@ -12,8 +12,7 @@ page = scraper.pick_type_of_search(:all)
 # basically scan from DA 1 to whatever.... until 10 tries and assume it is 'The End'
 i = 1
 error = 0
-cont = true
-while cont do
+while error < 10 do
   list = scraper.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
   table = list.search("table.ContentPanel")
@@ -32,7 +31,4 @@ while cont do
 
   # increase i value and scan the next DA
   i += 1
-  if error == 10
-    cont = false
-  end
 end
