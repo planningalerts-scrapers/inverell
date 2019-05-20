@@ -43,7 +43,7 @@ while cont do
       record = {
         'council_reference' => data[:council_reference],
         'address'           => data[:address] + ', NSW',
-        'description'       => data[:description].gsub("\n", '. ').squeeze(' '),
+        'description'       => data[:description],
         'info_url'          => data[:detail_url],
         'date_scraped'      => Date.today.to_s,
         'date_received'     => data[:date_received],

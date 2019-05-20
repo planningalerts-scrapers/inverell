@@ -19,8 +19,8 @@
   date_received: '2019-01-23'
 - council_reference: DA-12/2019
   address: 5 Andrew Street, INVERELL  2360, NSW
-  description: Alterations and Additions to Dwelling . Construct Carport. Demolition
-    of dilapidated shed (behind carport) and outbuilding
+  description: "Alterations and Additions to Dwelling \nConstruct Carport\nDemolition
+    of dilapidated shed (behind carport) and outbuilding"
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213127
   date_scraped: '2019-05-15'
   date_received: '2019-02-04'
@@ -94,7 +94,7 @@
   date_received: '2019-03-11'
 - council_reference: DA-23/2019
   address: 63 Granville Street, INVERELL  2360, NSW
-  description: Demolition, Construction of Dwelling, Construction of Dual Occupancy
+  description: Demolition,  Construction of Dwelling, Construction of Dual Occupancy
     (Attached) and Subdivision
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213295
   date_scraped: '2019-05-15'
@@ -131,9 +131,9 @@
   date_received: '2019-03-29'
 - council_reference: DA-29/2019
   address: 124 Trafalgar Lane, GUM FLAT  2360, NSW
-  description: Single Dwelling Use Only. This application is subject to a request
-    under Clause 4.6 of the Inverell Local Environmental Plan 2012 (ILEP) to vary
-    the minimum lot size required under Clause 4.2A (3) (a) of the ILEP.
+  description: |-
+    Single Dwelling Use Only
+    This application is subject to a request under Clause 4.6 of the Inverell Local Environmental Plan 2012 (ILEP) to vary the minimum lot size required under Clause 4.2A (3) (a) of the ILEP.
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213373
   date_scraped: '2019-05-15'
   date_received: '2019-04-08'
