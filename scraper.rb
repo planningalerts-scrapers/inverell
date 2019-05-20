@@ -47,9 +47,7 @@ while cont do
       'date_received'     => Date.parse(tr.search('span')[2].inner_text).to_s,
     }
 
-    puts "Saving record " + record['council_reference'] + ", " + record['address']
-    # puts record
-    ScraperWiki.save_sqlite(['council_reference'], record)
+    EpathwayScraper.save(record)
   else
     error += 1
   end
