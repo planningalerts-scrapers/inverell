@@ -38,16 +38,7 @@ while cont do
   unless ( table.empty? )
     error  = 0
 
-    scraper.extract_table_data_and_urls(table).each do |row|
-      data = scraper.extract_index_data(row)
-      record = {
-        'council_reference' => data[:council_reference],
-        'address'           => data[:address],
-        'description'       => data[:description],
-        'info_url'          => scraper.base_url,
-        'date_scraped'      => Date.today.to_s,
-        'date_received'     => data[:date_received],
-      }
+    scraper.scrape_index_page(list) do |record|
       # The state was missing from the address
       record["address"] += ", NSW"
       EpathwayScraper.save(record)
