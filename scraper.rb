@@ -14,11 +14,7 @@ unless ( is_valid_year(ENV['MORPH_PERIOD'].to_s) )
 end
 puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
 
-url         = 'http://203.49.140.77/ePathway/Production/Web'
-
 scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
-
-agent = Mechanize.new
 
 page = scraper.pick_type_of_search(:all)
 
