@@ -15,7 +15,6 @@ end
 puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
 
 url         = 'http://203.49.140.77/ePathway/Production/Web'
-comment_url = 'mailto:council@inverell.nsw.gov.au'
 
 scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
 
@@ -44,7 +43,6 @@ while cont do
       'address'           => tr.search('span')[1].inner_text + ', NSW',
       'description'       => tr.search('span')[0].inner_text.gsub("\n", '. ').squeeze(' '),
       'info_url'          => url + "/GeneralEnquiry/" + tr.search('a')[0]['href'],
-      'comment_url'       => comment_url,
       'date_scraped'      => Date.today.to_s,
       'date_received'     => Date.parse(tr.search('span')[2].inner_text).to_s,
     }
