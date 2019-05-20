@@ -9,10 +9,9 @@ scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production
 page = scraper.pick_type_of_search(:all)
 
 # a very bad and hackie way to collect DAs
-# basically scan from DA 1 to whatever.... until 10 tries and assume it is 'The End'
+# basically scan from DA 1 to whatever....
 i = 1
-error = 0
-while error < 10 do
+loop do
   list = scraper.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
   no_results = 0
@@ -22,11 +21,7 @@ while error < 10 do
     record["address"] += ", NSW"
     EpathwayScraper.save(record)
   end
-  if no_results > 0
-    error = 0
-  else
-    error += 1
-  end
+  break if no_results == 0
 
   # increase i value and scan the next DA
   i += 1
