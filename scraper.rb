@@ -42,12 +42,14 @@ while cont do
       data = scraper.extract_index_data(row)
       record = {
         'council_reference' => data[:council_reference],
-        'address'           => data[:address] + ', NSW',
+        'address'           => data[:address],
         'description'       => data[:description],
         'info_url'          => data[:detail_url],
         'date_scraped'      => Date.today.to_s,
         'date_received'     => data[:date_received],
       }
+      # The state was missing from the address
+      record["address"] += ", NSW"
       EpathwayScraper.save(record)
     end
   else
