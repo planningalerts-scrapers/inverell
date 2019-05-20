@@ -15,16 +15,15 @@ error = 0
 while error < 10 do
   list = scraper.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
-  table = list.search("table.ContentPanel")
-
-  unless ( table.empty? )
-    error  = 0
-
-    scraper.scrape_index_page(list) do |record|
-      # The state was missing from the address
-      record["address"] += ", NSW"
-      EpathwayScraper.save(record)
-    end
+  no_results = 0
+  scraper.scrape_index_page(list) do |record|
+    no_results += 1
+    # The state was missing from the address
+    record["address"] += ", NSW"
+    EpathwayScraper.save(record)
+  end
+  if no_results > 0
+    error = 0
   else
     error += 1
   end
