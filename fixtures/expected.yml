@@ -250,6 +250,27 @@
   comment_url: mailto:council@inverell.nsw.gov.au
   date_scraped: '2019-05-15'
   date_received: '2019-05-09'
+- council_reference: DA-41/2019
+  address: 30 King Street, INVERELL  2360, NSW
+  description: Alterations and Additions to Dwelling
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213492
+  comment_url: mailto:council@inverell.nsw.gov.au
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-15'
+- council_reference: DA-42/2019
+  address: 103 Henderson Street, INVERELL  2360, NSW
+  description: Subdivision
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213500
+  comment_url: mailto:council@inverell.nsw.gov.au
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-17'
+- council_reference: DA-43/2019
+  address: 7 Tulare Crescent, INVERELL  2360, NSW
+  description: Construct carport
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryDetailView.aspx?Id=213508
+  comment_url: mailto:council@inverell.nsw.gov.au
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
 - council_reference: DA-5/2019
   address: 5 Allambie Crescent, INVERELL  2360, NSW
   description: Alterations and additions to dwelling
