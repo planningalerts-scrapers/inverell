@@ -14,11 +14,7 @@ i = 1
 error = 0
 cont = true
 while cont do
-  form = page.form
-  field = form.field_with(name: "ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox")
-  field.value = 'DA-' + i.to_s + '/' + ENV['MORPH_PERIOD']
-  button = form.button_with(value: "Search")
-  list = form.submit(button)
+  list = scraper.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
   table = list.search("table.ContentPanel")
 
