@@ -233,12 +233,59 @@
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-20'
+- council_reference: DA-44/2019
+  address: 271 Ponds Road, GILGAI  2360, NSW
+  description: Studio
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: DA-45/2019
+  address: 17-19 Auburn Vale Road, INVERELL  2360, NSW
+  description: Demolition
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: DA-46/2019
+  address: 2 Ring Street, INVERELL  2360, NSW
+  description: Partial Use of 2 Ring Street for Car Restoration and Sales
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: DA-47/2019
+  address: 219-225 Byron Street, INVERELL  2360, NSW
+  description: |-
+    Use of 219-225 Byron Street for:
+    - Retail sales;
+    - Repair of caravans, boats and power equipment;
+    - Sale of boats and power equipment; and
+    - Gas bottle exchange.
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-23'
+- council_reference: DA-48/2019
+  address: 79-81 Otho Street, INVERELL  2360, NSW
+  description: Change of use - Cosmetic Tatooing
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: DA-49/2019
+  address: Copeton Dam Road, GUM FLAT  2360, NSW
+  description: Boundary Adjustment
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-31'
 - council_reference: DA-5/2019
   address: 5 Allambie Crescent, INVERELL  2360, NSW
   description: Alterations and additions to dwelling
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-15'
+- council_reference: DA-50/2019
+  address: 20 Jack Street, INVERELL  2360, NSW
+  description: Alterations and additions to dwelling
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-31'
 - council_reference: DA-6/2019
   address: 13 Queen Street, INVERELL  2360, NSW
   description: Construct new shed
