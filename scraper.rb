@@ -15,7 +15,7 @@ loop do
   list = EpathwayScraper::Page::Search.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
   no_results = 0
-  scraper.scrape_index_page(list) do |record|
+  EpathwayScraper::Page::Index.scrape_index_page(list, scraper.base_url, scraper.agent) do |record|
     no_results += 1
     # The state was missing from the address
     record["address"] += ", NSW"
