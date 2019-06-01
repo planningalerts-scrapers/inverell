@@ -6,7 +6,9 @@ puts "Getting data in year `" + ENV['MORPH_PERIOD'] + "`, changable via MORPH_PE
 
 scraper = EpathwayScraper::Scraper.new("http://203.49.140.77/ePathway/Production")
 
-page = scraper.pick_type_of_search(:all)
+page = scraper.agent.get(scraper.base_url)
+page = EpathwayScraper::Page::ListSelect.follow_javascript_redirect(page, scraper.agent)
+page = EpathwayScraper::Page::ListSelect.pick(page, :all)
 
 # a very bad and hackie way to collect DAs
 # basically scan from DA 1 to whatever....
