@@ -24,6 +24,12 @@
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-02-04'
+- council_reference: DA-121/2017/A
+  address: 13/47 Mulligan Street, INVERELL  2360, NSW
+  description: Dwelling
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-02-18'
 - council_reference: DA-13/2019
   address: 2140 Copeton Dam Road, COPETON  2360, NSW
   description: Boundary Adjustment
@@ -268,6 +274,14 @@
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-28'
+- council_reference: DA-49/2018/A
+  address: 43 Otho Street, INVERELL  2360, NSW
+  description: Additional Use of Building for Takeaway Food and Drink, Signage, Shopfront
+    Alterations,  Removal of Rear Sheds and Installation of Rear Fence - amendment
+    to conditions to use kitchen on site for food preparation (take away only)
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-03-22'
 - council_reference: DA-49/2019
   address: Copeton Dam Road, GUM FLAT  2360, NSW
   description: Boundary Adjustment
@@ -298,6 +312,18 @@
   info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-17'
+- council_reference: DA-70/2016/A
+  address: 372 Fernhill Road, INVERELL  2360, NSW
+  description: Dwelling, Swimming Pool and Granny Flat
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-02-14'
+- council_reference: DA-79/2014/A
+  address: 793 Copeton Dam Road, GUM FLAT  2360, NSW
+  description: Boundary adjustment and consolidation
+  info_url: http://203.49.140.77/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-02-04'
 - council_reference: DA-8/2019
   address: 9A McBrides Lane, INVERELL  2360, NSW
   description: Earthworks
