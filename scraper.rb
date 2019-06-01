@@ -12,7 +12,7 @@ page = scraper.pick_type_of_search(:all)
 # basically scan from DA 1 to whatever....
 i = 1
 loop do
-  list = scraper.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
+  list = EpathwayScraper::Page::Search.search_for_one_application(page, "DA-#{i}/#{ENV['MORPH_PERIOD']}")
 
   no_results = 0
   scraper.scrape_index_page(list) do |record|
